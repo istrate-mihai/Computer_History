@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(blox.ttf);
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  color: blue;
+  background-image: url("../images/Alan-Turing-2012.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  background-size: 10%;
+}
+
+header h1 {
+  text-align: center;
+}
+
+h1 {
+  font-family: myFirstFont;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 5px 0 5px;
+  max-width: 900px;
+  overflow: hidden;
+}
+
+.main-container {
+  background-color: burlywood;
+}
+
+main,
+aside {
+  padding: 5px 0;
+  text-align: center;
+}
+
+.section {
+  display: inline-block;
+  margin: 5px;
+}
+
+.section-main {
+  width: 70%;
+}
+
+.section-aside {
+  width: 25%;
+}
+
+.subsection-main {
+  width: 46%;
+  display: inline-block;
+  clear: both;
+}
+
+.introduction {
+  float: left;
+}
+
+.subsection-main-img {
+  width: 100%;
+}
+
+aside {
+  float: left;
+}
+
+.subsection-aside-img {
+  width: 70%;
+}
+
+footer {
+  margin-left: 10px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: indigo;
+}
+
+a:hover {
+  color: peru;
+}
+
+@media screen and (max-width: 480px) {
+  * {
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+    margin: 0px;
+  }
+
+  header {
+    background-size: 50%;
+    background-position: left;
+  }
+}
