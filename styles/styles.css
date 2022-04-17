@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: myFirstFont;
-  src: url(blox.ttf);
+  src: url("blox.ttf");
 }
 
 html {
@@ -100,19 +100,26 @@ a:hover {
 }
 
 @media screen and (max-width: 480px) {
-  * {
-    padding: 1px;
+  .section-main,
+  .section-aside {
+    width: 100%;
+    display: block;
+  }
+
+  .subsection-main {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     align-self: center;
+    flex-direction: column;
+  }
+
+  .subsection-aside-img {
     width: 100%;
-    margin: 0px;
   }
 
   header {
     background-size: 50%;
-    background-position: left;
+    background-position: top right;
   }
 }
